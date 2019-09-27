@@ -21,6 +21,7 @@ const Banner = () => (
         object-fit: cover;
         animation-name: zoom-in;
         animation-duration: 2s;
+        animation-delay: 100ms;
         -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
         clip-path: polygon(0 0, 100% 0, 100% 96%, 0 100%);
       }
