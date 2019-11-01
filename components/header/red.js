@@ -36,7 +36,7 @@ const Red = () => (
         color: #fff;
         position: relative;
         z-index: 1;
-        height: 400px;
+        height: 500px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;

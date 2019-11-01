@@ -22,9 +22,9 @@ const Video = () => (
           width="600"
           height="360"
           src="https://www.youtube.com/embed/AIcZeqt1cNQ"
-          frameborder="0"
+          frameBorder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
+          allowFullScreen
         ></iframe>
       </div>
     </div>

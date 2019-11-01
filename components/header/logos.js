@@ -11,7 +11,8 @@ const Logos = () => (
     <style jsx>{`
       .logo-container {
         padding: 30px;
-        height: 350px;
+        margin-top: 60px;
+        height: 300px;
         display: flex;
         align-items: center;
         justify-content: space-evenly;
