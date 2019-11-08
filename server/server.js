@@ -10,6 +10,9 @@ const handle = app.getRequestHandler()
 app.prepare().then(() => {
     const server = express()
 
+    server.use(morgan('tiny'))
+    server.use(bodyParser.json())
+
     server.get('*', (req, res) => {
         return handle(req, res)
     })

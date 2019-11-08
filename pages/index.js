@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import Head from "next/head";
 import Nav from "../components/nav";
 import Banner from "../components/banner";
@@ -8,6 +7,10 @@ import Footer from "../components/footer"
 
 const Home = () => (
   <div>
+    <Head>
+      <title>Loganville Roofing Contractor</title>
+      <script src="https://kit.fontawesome.com/bc49c3384a.js" crossOrigin="anonymous"></script>
+    </Head>
     <Nav />
     <Banner />
     <Info />

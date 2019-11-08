@@ -23,15 +23,18 @@ const links = [
 const socials = [
   {
     location: "static/socials/facebook-f.svg",
-    href: "https://www.facebook.com/empireroofingandrestoration/"
+    href: "https://www.facebook.com/empireroofingandrestoration/",
+    fa: "fab fa-facebook-f fa-2x"
   },
   {
     location: "static/socials/instagram.svg",
-    href: "https://www.instagram.com"
+    href: "https://www.instagram.com",
+    fa: "fab fa-instagram fa-2x"
   },
   {
     location: "static/socials/youtube.svg",
-    href: "https://www.youtube.com"
+    href: "https://www.youtube.com",
+    fa: "fab fa-youtube fa-2x"
   }
 ];
 
@@ -47,7 +50,9 @@ const Footer = () => (
     <div className="socials">
       {socials.map((social, i) => (
         <Link href={social.href} key={i}>
-          <img className="scl-icon" src={social.location} alt="social icon" />
+          <span className="scl" style={{color: "white"}}>
+            <a href={social.href}><i className={social.fa}></i></a>
+          </span>
         </Link>
       ))}
     </div>
@@ -80,9 +85,18 @@ const Footer = () => (
         font-family: "Raleway", sans-serif;
       }
 
-      .scl-icon {
-          width: 50px;
-          heigth: 50px;
+      socials {
+        width: 100%,
+        height: 33%
+        display: flex;
+        flex-direction: column
+        justify-content: center,
+        align-items: center,
+      }
+
+      scl a {
+        text-decoration: none
+        color: white
       }
     `}</style>
   </div>
